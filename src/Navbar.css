@@ -1,0 +1,91 @@
+/* Estilo general de la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo transparente con sombra */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Lista de enlaces */
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Enlace individual */
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  /* Estilo de los enlaces */
+  .navbar a {
+    text-decoration: none;
+    color: #d98bb8; /* Color rosado pastel */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navbar a:hover {
+    color: #f8b8d4; /* Cambio de color al pasar el cursor */
+    transform: scale(1.1); /* Efecto de zoom */
+    text-shadow: 0px 4px 8px rgba(255, 182, 193, 0.6);
+  }
+  
+  /* Efecto en el icono */
+  .navbar .icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar .icon:hover {
+    transform: rotate(360deg); /* Gira el icono al pasar el cursor */
+    color: #f7a8c7;
+  }
+  
+  /* Estilo del texto */
+  .navbar .text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .text:hover {
+    color: #f7a8c7; /* Cambio de color en el texto */
+    letter-spacing: 2px;
+  }
+  
+  /* Responsividad: cuando el tamaño de pantalla es pequeño */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  
+    .navbar a {
+      font-size: 16px;
+    }
+  
+    .navbar .icon {
+      font-size: 30px;
+    }
+  }
+  
